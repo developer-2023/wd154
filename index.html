@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            comparison operators and objects
+        */
+
+        let a = 10;
+        let b = a; // primitives - passing by value
+        b++;
+        console.log(a, b);
+        if (a == b) {console.log("a == b")} else {console.log("a != b")};
+
+        let obj1 = {a: 12};
+        let obj2 = obj1;
+        obj2.a++; // objects - passing by reference
+        console.log(obj1, obj2)
+        if (obj1 == obj2) {console.log("obj1 == obj2")} else {console.log("obj1 != obj2")};
+    </script>
+</body>
+</html>
